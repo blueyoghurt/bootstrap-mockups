@@ -3,9 +3,184 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <title>Hello Front-End</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Brand</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="https://c.s-microsoft.com/en-us/CMSImages/REGsK1.jpg?version=32f80334-b63d-df0d-8c6c-6cc4385d095d" alt="...">
+        <div class="carousel-caption">
+          <h2>From desktop to web, bring your ideas to life with Office 365</h2>
+          <p><a href="#">Learn more</a> > <a href="#">Buy now</a></p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://c.s-microsoft.com/en-us/CMSImages/Ofc_BTSBg_0718_1920x720_EN_US.jpg?version=0c6c4afa-9ac2-71cc-3e57-8ffda571d3a7" alt="...">
+        <div class="carousel-caption">
+          <h2>Limited-time offer: Students get $300 off Surface Book i5 128GB*</h2>
+          <p><a href="#">Learn more</a> > <a href="#">Buy now</a></p>
+        </div>
+      </div>
+      ...
+
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-lg-3">
+        <img src="https://c.s-microsoft.com/en-us/CMSImages/REFCE5_368_207.jpg?version=ca8c07d4-ed3b-8867-a347-452bed160bfa" width="100%";/>
+        <h3 class="text-center">Limited-time offer</h3>
+        <p class="text-center">Students save $150 on select HP Spectre x360 PCs.*</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-3">
+        <img src="https://c.s-microsoft.com/en-us/CMSImages/REKRPi_368_207.jpg?version=3ffbe8c6-6b36-c2d2-d7ab-24713c45ca5e" width="100%";/>
+        <h3 class="text-center">Xbox One S</h3>
+        <p class="text-center">Sleeker, slimmer, sharper. Buy now.</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-3">
+        <img src="https://c.s-microsoft.com/en-us/CMSImages/Band_Gym_368x207_EN_US.jpg?version=922f54ff-7b68-1e76-eb2c-b3bbbe165613" width="100%";/>
+        <h3 class="text-center">Microsoft Band</h3>
+        <p class="text-center">Live healthier and achieve more. Buy now.</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-3">
+        <img src="https://c.s-microsoft.com/en-us/CMSImages/REAQ4Z_368_207.jpg?version=6e8a50a1-a208-e40d-c2bc-c8b5413a73f9" width="100%";/>
+        <h3 class="text-center">Microsoft Store</h3>
+        <p class="text-center">Prep for success with our back-to-school deals.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Latest compiled and minified JavaScript -->
+  <div class="carousel slide">
+    <div class="carousel-inner">
+      <img src="https://c.s-microsoft.com/en-us/CMSImages/REJrnq.jpg?version=E13718EB-F1FA-3491-7CCE-6186D90E81BE&">
+      <div class="carousel-caption">
+        <h2>From desktop to web, bring your ideas to life with Office 365</h2>
+        <p><a href="#">Learn more</a> > <a href="#">Buy now</a></p>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-lg-3">
+        <img src="https://c.s-microsoft.com/en-us/CMSImages/Ofc365_Enterprise_1201_368x207_EN_US.jpg?version=f38c0b5a-6635-80f7-0183-d19c564fed84" width="100%";/>
+        <h3 class="text-center">New Office 365 for Enterprise</h3>
+        <p class="text-center">Learn more about all the capabilities now available.</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-3">
+        <img src="https://c.s-microsoft.com/en-us/CMSImages/Win10_EntEval_0729_368x207_EN_US.jpg?version=6cb796f2-af1b-ee08-8b01-173a90f75fa4" width="100%";/>
+        <h3 class="text-center">Windows 10 Enterprise</h3>
+        <p class="text-center">Download the free 90-day evaluation for IT professionals.</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-3">
+        <img src="https://c.s-microsoft.com/en-us/CMSImages/RECdWj_368_207.jpg?version=9a54c12b-f9af-7821-52fd-bb974b2bb94e" width="100%";/>
+        <h3 class="text-center">Visual Studio 2015</h3>
+        <p class="text-center">Create the next great app with our new free dev guide.</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-3">
+        <img src="https://c.s-microsoft.com/en-us/CMSImages/REF2eK_368_207.jpg?version=bd7278a5-f9a4-8672-394f-f851343cca23" width="100%";/>
+        <h3 class="text-center">Microsoft Cloud</h3>
+        <p class="text-center">This cloud helps a global nonprofit improve healthcare.</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="carousel slide">
+      <div class="carousel-inner">
+        <img src="https://c.s-microsoft.com/en-us/CMSImages/REwTxC.png?version=06741446-c300-c4ee-7a57-d489a430e628">
+        <div class="carousel-caption">
+          <h2>Cloud and devices, learn about the invisible revolution</h2>
+          <p><a href="#">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
